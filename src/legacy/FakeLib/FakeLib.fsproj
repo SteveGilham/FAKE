@@ -41,7 +41,7 @@
     <DocumentationFile>..\..\..\build\FakeLib.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
     <Compile Include="Utils.fs" />
     <Compile Include="..\..\app\Fake.Runtime\YaafFSharpScripting.fs">
       <Link>extern/YaafFSharpScripting.fs</Link>

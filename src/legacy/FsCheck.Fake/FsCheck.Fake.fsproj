@@ -68,7 +68,7 @@
     <Compile Include="TestBuildOrder.fs" />
     <Compile Include="TestNuget.fs" />
     <None Include="app.config" />
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net10.0;netstandard2.0</TargetFrameworks>
     <AssemblyName>Fake.Core.Environment</AssemblyName>
     <OutputType>Library</OutputType>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
@@ -19,5 +19,5 @@
     <Compile Include="BuildServer.fs" />
     <Compile Include="Operators.fs" />
   </ItemGroup>
-  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
+  <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

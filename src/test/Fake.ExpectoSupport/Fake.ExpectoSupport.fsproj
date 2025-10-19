@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
     <Compile Include="ExpectoHelpers.fs" />
   </ItemGroup>
-  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
-
+  <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

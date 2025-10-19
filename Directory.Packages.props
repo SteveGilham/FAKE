@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <PackageVersion Include="Expecto" Version="10.2.3" />
+        <PackageVersion Include="Expecto.TestResults" Version="8.13.2" />
+        <PackageVersion Include="Octokit" Version="14.0.0" />
+    </ItemGroup>
+</Project>

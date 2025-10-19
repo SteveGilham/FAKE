@@ -46,7 +46,7 @@
     <Compile Include="ComputationExpressions.fs" />
     <Compile Include="AssemblyInfo.fs" />
     <Content Include="app.config" />
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

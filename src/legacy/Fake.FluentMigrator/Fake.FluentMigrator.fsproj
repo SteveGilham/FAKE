@@ -64,7 +64,7 @@
   <ItemGroup>
     <Compile Include="FluentMigratorHelper.fs" />
     <Compile Include="AssemblyInfo.fs" />
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
     <None Include="Sample\CatsDatabase.cs" />
     <None Include="Sample\Sample.fsx" />
   </ItemGroup>

@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="GallioHelper.fs" />
     <None Include="app.config" />
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Gallio">

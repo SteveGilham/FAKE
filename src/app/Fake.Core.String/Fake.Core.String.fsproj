@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net10.0;netstandard2.0</TargetFrameworks>
     <DefineConstants>$(DefineConstants);DOTNETCORE</DefineConstants>
     <AssemblyName>Fake.Core.String</AssemblyName>
     <OutputType>Library</OutputType>
@@ -17,5 +17,5 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
   </PropertyGroup>
-  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
+  <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

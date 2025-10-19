@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="IISExpress.fs" />
     <Compile Include="IISHelper.fs" />
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
     <None Include="Script.fsx" />
     <None Include="app.config" />
   </ItemGroup>

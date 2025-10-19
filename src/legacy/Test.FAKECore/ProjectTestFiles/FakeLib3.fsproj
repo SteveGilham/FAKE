@@ -116,7 +116,7 @@
     <Compile Include="PermissionsHelper.fs" />
     <Compile Include="SpecFlowHelper.fs" />
     <Compile Include="OctoTools.fs" />
-    <None Include="paket.references" />
+    <!-- None Include="paket.references" / -->
     <None Include="packages.config" />
     <Compile Include="SignHelper.fs" />
     <Compile Include="MageHelper.fs" />

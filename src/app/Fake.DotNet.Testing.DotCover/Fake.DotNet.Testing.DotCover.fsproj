@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net10.0;netstandard2.0</TargetFrameworks>
     <DefineConstants>$(DefineConstants);NO_DOTNETCORE_BOOTSTRAP</DefineConstants>
     <AssemblyName>Fake.DotNet.Testing.DotCover</AssemblyName>
     <OutputType>Library</OutputType>
@@ -22,5 +22,5 @@
     <ProjectReference Include="..\Fake.DotNet.Testing.XUnit2\Fake.DotNet.Testing.XUnit2.fsproj" />
     <ProjectReference Include="..\Fake.Testing.Common\Fake.Testing.Common.fsproj" />
   </ItemGroup>
-  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
+  <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>
