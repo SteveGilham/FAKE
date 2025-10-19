@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Fake.Core.Trace\Fake.Core.Trace.fsproj" />
     <ProjectReference Include="..\Fake.IO.FileSystem\Fake.IO.FileSystem.fsproj" />
+    <PackageReference Include="Dotnet.Xdt" />
   </ItemGroup>
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);FX_NO_SYSTEM_CONFIGURATION;NO_MSBUILD_AVAILABLE</DefineConstants>
