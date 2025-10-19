@@ -13,6 +13,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Registry.fs" />
+    <PackageReference Include="Microsoft.Win32.Registry" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>
