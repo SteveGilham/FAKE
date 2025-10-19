@@ -50,7 +50,6 @@ module File =
         | 0uy :: 0uy :: 0xfeuy :: 0xffuy :: _ -> Encoding.UTF32
         | _ -> def
 
-
     /// <summary>
     /// Checks if the file exists on disk.
     /// </summary>
@@ -223,7 +222,7 @@ module File =
     ///
     /// <param name="file">The file name to use</param>
     /// <param name="bytes">The bytes to write</param>
-    let writeBytes file bytes = File.WriteAllBytes(file, bytes)
+    let writeBytes file (bytes : byte array) = File.WriteAllBytes(file, bytes) // TODO - accept IEnumerable<byte>
 
     /// <summary>
     /// Writes a string to a file

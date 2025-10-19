@@ -7,6 +7,7 @@
   <ItemGroup>
     <!-- None Include="paket.references" / -->
     <Compile Include="ExpectoHelpers.fs" />
+    <PackageReference Include="Expecto" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

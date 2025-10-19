@@ -3,6 +3,9 @@
     <ItemGroup>
         <PackageVersion Include="Expecto" Version="10.2.3" />
         <PackageVersion Include="Expecto.TestResults" Version="8.13.2" />
+        <PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
         <PackageVersion Include="Octokit" Version="14.0.0" />
+        <PackageVersion Include="System.Buffers" Version="4.6.1" />
+        <PackageVersion Include="System.Collections.Immutable" Version="9.0.10" />
     </ItemGroup>
 </Project>

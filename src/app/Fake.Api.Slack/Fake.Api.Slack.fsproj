@@ -13,6 +13,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="SlackNotification.fs" />
+    <PackageReference Include="Newtonsoft.Json" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>
