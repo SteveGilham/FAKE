@@ -1,0 +1,111 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/app/">
+    <Project Path="src/app/fake-cli/fake-cli.fsproj" />
+    <Project Path="src/app/Fake.Api.GitHub/Fake.Api.GitHub.fsproj" />
+    <Project Path="src/app/Fake.Api.Slack/Fake.Api.Slack.fsproj" />
+    <Project Path="src/app/Fake.Azure.CloudServices/Fake.Azure.CloudServices.fsproj" />
+    <Project Path="src/app/Fake.Azure.Emulators/Fake.Azure.Emulators.fsproj" />
+    <Project Path="src/app/Fake.Azure.Kudu/Fake.Azure.Kudu.fsproj" />
+    <Project Path="src/app/Fake.Azure.WebJobs/Fake.Azure.WebJobs.fsproj" />
+    <Project Path="src/app/Fake.Build.CMake/Fake.Build.CMake.fsproj" />
+    <Project Path="src/app/Fake.BuildServer.AppVeyor/Fake.BuildServer.AppVeyor.fsproj" />
+    <Project Path="src/app/Fake.BuildServer.Bitbucket/Fake.BuildServer.Bitbucket.fsproj" />
+    <Project Path="src/app/Fake.BuildServer.GitHubActions/Fake.BuildServer.GitHubActions.fsproj" />
+    <Project Path="src/app/Fake.BuildServer.GitLab/Fake.BuildServer.GitLab.fsproj" />
+    <Project Path="src/app/Fake.BuildServer.TeamCity/Fake.BuildServer.TeamCity.fsproj" />
+    <Project Path="src/app/Fake.BuildServer.TeamFoundation/Fake.BuildServer.TeamFoundation.fsproj" />
+    <Project Path="src/app/Fake.BuildServer.Travis/Fake.BuildServer.Travis.fsproj" />
+    <Project Path="src/app/Fake.Core.CommandLineParsing/Fake.Core.CommandLineParsing.fsproj" />
+    <Project Path="src/app/Fake.Core.Context/Fake.Core.Context.fsproj" />
+    <Project Path="src/app/Fake.Core.DependencyManager.Paket/Fake.Core.DependencyManager.Paket.fsproj" />
+    <Project Path="src/app/Fake.Core.Environment/Fake.Core.Environment.fsproj" />
+    <Project Path="src/app/Fake.Core.FakeVar/Fake.Core.FakeVar.fsproj" />
+    <Project Path="src/app/Fake.Core.Process/Fake.Core.Process.fsproj" />
+    <Project Path="src/app/Fake.Core.ReleaseNotes/Fake.Core.ReleaseNotes.fsproj" />
+    <Project Path="src/app/Fake.Core.SemVer/Fake.Core.SemVer.fsproj" />
+    <Project Path="src/app/Fake.Core.String/Fake.Core.String.fsproj" />
+    <Project Path="src/app/Fake.Core.Target/Fake.Core.Target.fsproj" />
+    <Project Path="src/app/Fake.Core.Tasks/Fake.Core.Tasks.fsproj" />
+    <Project Path="src/app/Fake.Core.Trace/Fake.Core.Trace.fsproj" />
+    <Project Path="src/app/Fake.Core.UserInput/Fake.Core.UserInput.fsproj" />
+    <Project Path="src/app/Fake.Core.Vault/Fake.Core.Vault.fsproj" />
+    <Project Path="src/app/Fake.Core.Xml/Fake.Core.Xml.fsproj" />
+    <Project Path="src/app/Fake.Documentation.DocFx/Fake.Documentation.DocFx.fsproj" />
+    <Project Path="src/app/Fake.DotNet.AssemblyInfoFile/Fake.DotNet.AssemblyInfoFile.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Cli/Fake.DotNet.Cli.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Fsc/Fake.DotNet.Fsc.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Fsdocs/Fake.DotNet.Fsdocs.fsproj" />
+    <Project Path="src/app/Fake.DotNet.FSFormatting/Fake.DotNet.FSFormatting.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Fsi/Fake.DotNet.Fsi.fsproj" />
+    <Project Path="src/app/Fake.DotNet.FxCop/Fake.DotNet.FxCop.fsproj" />
+    <Project Path="src/app/Fake.DotNet.ILMerge/Fake.DotNet.ILMerge.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Mage/Fake.DotNet.Mage.fsproj" />
+    <Project Path="src/app/Fake.DotNet.MSBuild/Fake.DotNet.MSBuild.fsproj" />
+    <Project Path="src/app/Fake.DotNet.NuGet/Fake.DotNet.NuGet.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Paket/Fake.DotNet.Paket.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.Coverlet/Fake.DotNet.Testing.Coverlet.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.DotCover/Fake.DotNet.Testing.DotCover.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.Expecto/Fake.DotNet.Testing.Expecto.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.MSpec/Fake.DotNet.Testing.MSpec.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.MSTest/Fake.DotNet.Testing.MSTest.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.NUnit/Fake.DotNet.Testing.NUnit.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.OpenCover/Fake.DotNet.Testing.OpenCover.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.SpecFlow/Fake.DotNet.Testing.SpecFlow.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.VSTest/Fake.DotNet.Testing.VSTest.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Testing.XUnit2/Fake.DotNet.Testing.XUnit2.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Xamarin/Fake.DotNet.Xamarin.fsproj" />
+    <Project Path="src/app/Fake.DotNet.Xdt/Fake.DotNet.Xdt.fsproj" />
+    <Project Path="src/app/Fake.Installer.InnoSetup/Fake.Installer.InnoSetup.fsproj" />
+    <Project Path="src/app/Fake.Installer.Squirrel/Fake.Installer.Squirrel.fsproj" />
+    <Project Path="src/app/Fake.Installer.Wix/Fake.Installer.Wix.fsproj" />
+    <Project Path="src/app/Fake.IO.FileSystem/Fake.IO.FileSystem.fsproj" />
+    <Project Path="src/app/Fake.IO.Zip/Fake.IO.Zip.fsproj" />
+    <Project Path="src/app/Fake.JavaScript.Npm/Fake.JavaScript.Npm.fsproj" />
+    <Project Path="src/app/Fake.JavaScript.TypeScript/Fake.JavaScript.TypeScript.fsproj" />
+    <Project Path="src/app/Fake.JavaScript.Yarn/Fake.JavaScript.Yarn.fsproj" />
+    <Project Path="src/app/Fake.Net.FTP/Fake.Net.FTP.fsproj" />
+    <Project Path="src/app/Fake.Net.Http/Fake.Net.Http.fsproj" />
+    <Project Path="src/app/Fake.Net.SSH/Fake.Net.SSH.fsproj" />
+    <Project Path="src/app/Fake.netcore/Fake.netcore.fsproj" />
+    <Project Path="src/app/Fake.Runtime/Fake.Runtime.fsproj" />
+    <Project Path="src/app/Fake.Sql.SqlPackage/Fake.Sql.SqlPackage.fsproj" />
+    <Project Path="src/app/Fake.Testing.Common/Fake.Testing.Common.fsproj" />
+    <Project Path="src/app/Fake.Testing.Fixie/Fake.Testing.Fixie.fsproj" />
+    <Project Path="src/app/Fake.Testing.ReportGenerator/Fake.Testing.ReportGenerator.fsproj" />
+    <Project Path="src/app/Fake.Testing.SonarQube/Fake.Testing.SonarQube.fsproj" />
+    <Project Path="src/app/Fake.Tools.Git/Fake.Tools.Git.fsproj" />
+    <Project Path="src/app/Fake.Tools.GitVersion/Fake.Tools.GitVersion.fsproj" />
+    <Project Path="src/app/Fake.Tools.Octo/Fake.Tools.Octo.fsproj" />
+    <Project Path="src/app/Fake.Tools.Pickles/Fake.Tools.Pickles.fsproj" />
+    <Project Path="src/app/Fake.Tools.Rsync/Fake.Tools.Rsync.fsproj" />
+    <Project Path="src/app/Fake.Tools.SignTool/Fake.Tools.SignTool.fsproj" />
+    <Project Path="src/app/Fake.Windows.Chocolatey/Fake.Windows.Chocolatey.fsproj" />
+    <Project Path="src/app/Fake.Windows.Registry/Fake.Windows.Registry.fsproj" />
+  </Folder>
+  <Folder Name="/Solution Files/">
+    <File Path="build.fsx" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="README.md" />
+    <File Path="RELEASE_NOTES.md" />
+  </Folder>
+  <Folder Name="/template/">
+    <Project Path="src/template/fake-template/fake-template.fsproj">
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="src/test/Fake.Core.CommandLine.UnitTests/Fake.Core.CommandLine.UnitTests.fsproj" />
+    <Project Path="src/test/Fake.Core.IntegrationTests/Fake.Core.IntegrationTests.fsproj" />
+    <Project Path="src/test/Fake.Core.UnitTests/Fake.Core.UnitTests.fsproj" />
+    <Project Path="src/test/Fake.DotNet.Cli.IntegrationTests/Fake.DotNet.Cli.IntegrationTests.fsproj" />
+    <Project Path="src/test/Fake.ExpectoSupport/Fake.ExpectoSupport.fsproj" />
+  </Folder>
+  <Folder Name="/test/TestTools/" />
+</Solution>
