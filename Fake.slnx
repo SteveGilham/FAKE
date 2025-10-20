@@ -88,6 +88,7 @@
     <Project Path="src/app/Fake.Windows.Registry/Fake.Windows.Registry.fsproj" />
   </Folder>
   <Folder Name="/Solution Files/">
+    <File Path=".github/workflows/build_and_test.yml" />
     <File Path="build.fsx" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props" />

@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <ItemGroup>
+        <PackageVersion Include="BlackFox.VsWhere" Version="1.1.0" />
         <PackageVersion Include="Dotnet.Xdt" Version="2.2.1" />
         <PackageVersion Include="Expecto" Version="10.2.3" />
         <PackageVersion Include="FParsec" Version="2.0.0-beta2" />
+        <PackageVersion Include="FSharp.Compiler.Service" Version="43.9.303" />
         <PackageVersion Include="FSharp.Core" Version="9.0.303" />
+        <PackageVersion Include="Microsoft.Build.Framework" Version="17.14.28" />
         <PackageVersion Include="Microsoft.Win32.Registry" Version="5.0.0" />
+        <PackageVersion Include="MSBuild.StructuredLogger" Version="2.3.71" />
         <PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
+        <PackageVersion Include="NuGet.Packaging" Version="6.14.0" />
+        <PackageVersion Include="NuGet.Protocol" Version="6.14.0" />
         <PackageVersion Include="Octokit" Version="14.0.0" />
         <PackageVersion Include="System.Buffers" Version="4.6.1" />
         <PackageVersion Include="System.Collections.Immutable" Version="9.0.10" />
+        <PackageVersion Include="System.Reactive" Version="6.1.0" />
     </ItemGroup>
 </Project>

@@ -23,6 +23,9 @@
     <Compile Include="VisibleTo.fs" />
     <Compile Include="BinLog.fs" />
     <Compile Include="MSBuild.fs" />
+    <PackageReference Include="Blackfox.VsWhere" />
+    <PackageReference Include="Microsoft.Build.Framework" />
+    <PackageReference Include="MSBuild.StructuredLogger" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

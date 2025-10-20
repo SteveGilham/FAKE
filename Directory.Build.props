@@ -21,9 +21,23 @@
     <ItemGroup>
         <!-- Workaround The type referenced through 'System.Object' is defined in an assembly that is not referenced. You must add a reference to assembly 'netstandard'. -->
         <Reference Condition=" '$(TargetFramework)' == 'net472' " Include="netstandard" />
+        <PackageReference Include="FSharp.Core" />
     </ItemGroup>
     <ItemGroup>
         <None Include="$(MSBuildThisFileDirectory)docs/content/img/logo.png" Pack="true" PackagePath="\" />
         <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <DeterministicSourcePaths>false</DeterministicSourcePaths>
+        <ContinuousIntegrationBuild>false</ContinuousIntegrationBuild>
+        <WarningLevel>4</WarningLevel>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsAsErrors />
+        <Tailcalls>true</Tailcalls>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'!='Debug'">
+        <DeterministicSourcePaths>true</DeterministicSourcePaths>
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    </PropertyGroup>
 </Project>
