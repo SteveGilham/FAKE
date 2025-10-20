@@ -5,9 +5,7 @@ on:
   push:
     branches:
     - master
-    - feature/*
-    - release/*
-    - develop/github/*
+    - build/*
   pull_request:
     branches:
     - master
