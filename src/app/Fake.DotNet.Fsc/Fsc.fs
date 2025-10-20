@@ -481,7 +481,8 @@ module Fsc =
                 | FSharpDiagnosticSeverity.Hidden -> FscResultMessage.Warning e.Message
                 | FSharpDiagnosticSeverity.Info -> FscResultMessage.Warning e.Message)
 
-        errors, exitCode
+        // work round apparent API change where exitCode has become an exception
+        errors, (if (Option.isNone exitCode) then 0 else -1)
 
     /// <summary>
     /// Compiles the given F# source files with the specified parameters.

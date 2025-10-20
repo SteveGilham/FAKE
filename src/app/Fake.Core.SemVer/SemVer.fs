@@ -366,11 +366,12 @@ module SemVer =
 
             /// matches over list of the version fragments *and* delimiters
             let major, minor, patch, revision, suffix =
-                match fragments with
-                | Int M :: "." :: Int m :: "." :: Int p :: "." :: Big b :: tail -> M, m, p, b, tail
-                | Int M :: "." :: Int m :: "." :: Int p :: tail -> M, m, p, 0I, tail
-                | Int M :: "." :: Int m :: tail -> M, m, 0, 0I, tail
-                | Int M :: tail -> M, 0, 0, 0I, tail
+                match fragments with // error FS0049: Uppercase variable identifiers should not generally be used in patterns,
+                //                                    and may indicate a missing open declaration or a misspelt pattern name.
+                | Int bigM :: "." :: Int m :: "." :: Int p :: "." :: Big b :: tail -> bigM, m, p, b, tail
+                | Int bigM :: "." :: Int m :: "." :: Int p :: tail -> bigM, m, p, 0I, tail
+                | Int bigM :: "." :: Int m :: tail -> bigM, m, 0, 0I, tail
+                | Int bigM :: tail -> bigM, 0, 0, 0I, tail
                 | _ -> raise (ArgumentException("SemVer.Parse", "version"))
             //this is expected to fail, for now :/
             //| [text] -> 0, 0, 0, 0I, [text]
