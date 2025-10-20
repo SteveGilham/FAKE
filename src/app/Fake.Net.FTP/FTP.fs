@@ -33,7 +33,7 @@ module FTP =
             Request: FtpWebRequest
         }
 
-#nowarn 44
+//#nowarn 44
 // error FS0044: This construct is deprecated. WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.
 // HttpClient is not suitable for FTP operations (does not/will not support), so we will continue using FtpWebRequest despite the warning.
 // Grok suggests using FluentFtp instead

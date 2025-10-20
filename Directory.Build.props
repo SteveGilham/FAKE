@@ -32,8 +32,8 @@
         <DeterministicSourcePaths>false</DeterministicSourcePaths>
         <ContinuousIntegrationBuild>false</ContinuousIntegrationBuild>
         <WarningLevel>4</WarningLevel>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-        <WarningsAsErrors />
+        <!-- TreatWarningsAsErrors>true</TreatWarningsAsErrors -->
+        <!-- WarningsAsErrors / -->
         <Tailcalls>true</Tailcalls>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)'!='Debug'">

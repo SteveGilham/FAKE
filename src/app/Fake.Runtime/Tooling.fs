@@ -27,7 +27,7 @@ let private fakeDownloadUri version =
 
 let internal downloadAndExtract (uri: Uri) directory =
     async {
-#nowarn 44 // TODO HTTP Client
+//#nowarn 44 // TODO HTTP Client
         use client = new WebClient()
         client.Headers.Add("user-agent", "Ionide")
         let tempFile = Path.GetTempFileName()
