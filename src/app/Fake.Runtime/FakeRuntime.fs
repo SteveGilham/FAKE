@@ -714,7 +714,7 @@ let prepareFakeScript (config: FakeConfig) : PrepareInfo =
             """
         source https://api.nuget.org/v3/index.json
         storage: none
-        framework: netstandard2.0,net10.0
+        framework: netstandard2.0,net8.0
         nuget FSharp.Core
                 """
 
