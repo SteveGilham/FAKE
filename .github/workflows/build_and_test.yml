@@ -1,16 +1,7 @@
 name: FAKE Build and Test
 
 on:
-#    [push, pull_request]
-  push:
-    branches:
-    - master
-    - feature/*
-    - release/*
-    - develop/github/*
-  pull_request:
-    branches:
-    - master
+    [push, pull_request]
 
 jobs:
     event_file: # Used for test reporting
