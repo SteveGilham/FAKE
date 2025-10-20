@@ -142,7 +142,7 @@ type BuildFailedException =
 #if !NETSTANDARD1_6
 // error FS0044: This construct is deprecated. This API supports obsolete formatter-based serialization.
 // It should not be called or extended by application code.
-#nowarn 44
+//#nowarn 44
     new(info: System.Runtime.Serialization.SerializationInfo, context: System.Runtime.Serialization.StreamingContext) =
         { inherit Exception(info, context)
           info = None }
