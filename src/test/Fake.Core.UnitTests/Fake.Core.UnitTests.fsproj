@@ -100,7 +100,7 @@
     <!-- Last version supporting netstandard2.0 : consistent with Fake.ExpectoSupport.proj -->
     <PackageReference Include="Expecto" VersionOverride="9.0.4" />
     <PackageReference Include="Expecto.FsCheck" VersionOverride="9.0.4" />
-    <PackageReference Include="FsCheck" />
+    <PackageReference Include="FsCheck" VersionOverride="2.14.3" />
     <PackageReference Include="Paket.Core" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
