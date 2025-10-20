@@ -97,7 +97,9 @@
     <None Include="TestFiles/Fake.DotNet.Xdt.Files/web.original.config" CopyToOutputDirectory="Always" />
     <None Include="TestFiles/Fake.DotNet.Xdt.Files/web.test.config" CopyToOutputDirectory="Always" />
     <None Include="TestFiles/Fake.DotNet.Xdt.Files/web.transformed.config" CopyToOutputDirectory="Always" />
-    <PackageReference Include="Expecto" />
+    <!-- Last version supporting netstandard2.0 : consistent with Fake.ExpectoSupport.proj -->
+    <PackageReference Include="Expecto" VersionOverride="9.0.4" />
+    <PackageReference Include="Expecto.FsCheck" VersionOverride="9.0.4" />
     <PackageReference Include="FsCheck" />
     <PackageReference Include="Paket.Core" />
   </ItemGroup>

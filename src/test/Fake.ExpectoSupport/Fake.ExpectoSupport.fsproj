@@ -9,6 +9,7 @@
     <Compile Include="ExpectoHelpers.fs" />
     <!-- Last version supporting netstandard2.0 -->
     <PackageReference Include="Expecto" VersionOverride="9.0.4" />
+    <PackageReference Include="Expecto.FsCheck" VersionOverride="9.0.4" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

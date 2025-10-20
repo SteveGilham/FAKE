@@ -4,6 +4,7 @@
         <PackageVersion Include="BlackFox.VsWhere" Version="1.1.0" />
         <PackageVersion Include="Dotnet.Xdt" Version="2.2.1" />
         <PackageVersion Include="Expecto" Version="10.2.3" />
+        <PackageVersion Include="Expecto.FsCheck" Version="10.2.3" />
         <PackageVersion Include="FParsec" Version="2.0.0-beta2" />
         <PackageVersion Include="FsCheck" Version="3.3.1" />
         <PackageVersion Include="FSharp.Compiler.Service" Version="43.9.303" />
