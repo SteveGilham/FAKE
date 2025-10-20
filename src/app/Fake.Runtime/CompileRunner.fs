@@ -19,7 +19,6 @@ type Marker =
     class
     end
 
-
 /// Handles a cache store operation, this should not throw as it is executed in a finally block and
 /// therefore might eat other exceptions. And a caching error is not critical.
 let private handleCoreCaching (context: FakeContext) (compiledAssembly: string) (errors: string) =
@@ -239,7 +238,7 @@ let runUncached (context: FakeContext) : ResultCoreCacheInfo * RunResult =
 
     let cacheInfo = handleCoreCaching context wishPath compileErrors.FormattedErrors
 
-    if returnCode = 0 then
+    if Option.isNone returnCode then
         // here we will move the result of compilation to FAKE script directory instead of temporary directory
         try
             File.Move(compilerAssemblyTempPath, wishPath)

@@ -302,7 +302,6 @@ let findAndLoadInRuntimeDeps
     if logLevel.PrintVerbose then
         tracefn "Trying to resolve: %s" strName
 
-
     // These guys need to be handled carefully, they must only exist a single time in memory
     let wellKnownAssemblies =
         [ Environment.fakeContextAssembly (); Environment.fsCoreAssembly () ]
@@ -415,7 +414,7 @@ This can happen for various reasons:
   -> You might try to load a legacy-script with the new netcore runner.
     Please take a look at the migration guide: https://fake.build/guide/fake-migrate-to-fake-5.html
 - The nuget cache (or packages folder) might be broken.
-  -> Please save your state, open an issue and then 
+  -> Please save your state, open an issue and then
   - delete '%s' from the '~/.nuget' cache (and the 'packages' folder)
   - delete 'paket-files/paket.restore.cached' if it exists
   - delete '<script.fsx>.lock' if it exists
@@ -559,7 +558,7 @@ let prepareContext (config: FakeConfig) (cache: ICachingProvider) =
         let combined = getCombinedString allScriptContents (getOpts config.CompileOptions)
         allScriptContents, combined, getStringHash combined
 
-    let writeToCache ((scripts: Script list), combined, hash) =
+    let writeToCache ((scripts: Script list), (combined:string), (hash:string)) =
         File.WriteAllText(fakeCacheFile, hash)
         let locations = scripts |> List.map (fun s -> s.Location)
         // write fakeCacheContentsFile
