@@ -29,13 +29,6 @@
         "fsdocs"
       ],
       "rollForward": false
-    },
-    "fake-cli": {
-      "version": "1.0.0-1",
-      "commands": [
-        "fake"
-      ],
-      "rollForward": false
     }
   }
 }
