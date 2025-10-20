@@ -29,6 +29,7 @@
             <Version>0.1.153-*</Version>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+      <PackageReference Include="Paket.Core" />
     </ItemGroup>
     <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

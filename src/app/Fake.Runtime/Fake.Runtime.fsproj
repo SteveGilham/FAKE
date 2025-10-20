@@ -39,6 +39,8 @@
     <ProjectReference Include="..\Fake.DotNet.Cli\Fake.DotNet.Cli.fsproj" />
     <ProjectReference Include="..\Fake.IO.FileSystem\Fake.IO.FileSystem.fsproj" />
     <ProjectReference Include="..\Fake.Core.DependencyManager.Paket\Fake.Core.DependencyManager.Paket.fsproj" />
+    <PackageReference Include="FSharp.Compiler.Service" />
+    <PackageReference Include="Paket.Core" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="cachedDotnetSdkReleases.json">

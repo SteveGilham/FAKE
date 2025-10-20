@@ -27,6 +27,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Fake.Runtime\Fake.Runtime.fsproj" />
     <ProjectReference Include="..\Fake.Core.CommandLineParsing\Fake.Core.CommandLineParsing.fsproj" />
+    <PackageReference Include="Paket.Core" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

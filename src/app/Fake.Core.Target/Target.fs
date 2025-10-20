@@ -140,10 +140,14 @@ type BuildFailedException =
         { inherit Exception(msg, inner)
           info = Some info }
 #if !NETSTANDARD1_6
+// error FS0044: This construct is deprecated. This API supports obsolete formatter-based serialization.
+// It should not be called or extended by application code.
+#nowarn 44
     new(info: System.Runtime.Serialization.SerializationInfo, context: System.Runtime.Serialization.StreamingContext) =
         { inherit Exception(info, context)
           info = None }
 #endif
+
     member x.Info = x.info
 
     member x.Wrap() =
@@ -313,7 +317,6 @@ module Target =
     /// </summary>
     let internal getBuildFailureTargets =
         getVarWithInit "BuildFailureTargets" (fun () -> Dictionary<_, _>(StringComparer.OrdinalIgnoreCase))
-
 
     /// <summary>
     /// Resets the state so that a deployment can be invoked multiple times
@@ -847,7 +850,6 @@ module Target =
                 else
                     visitDependenciesAux workLeft
             | _ -> visitedTargets |> Seq.toList
-
 
         // first find the list of targets we "have" to build
         let targets = visitDependenciesAux [ target ]
@@ -1466,7 +1468,6 @@ module Target =
             let res = parseArgsAndSetEnvironment ()
             setArgResults res
             proc res
-
 
     /// <summary>
     /// Run functions which don't throw and return the context after all targets have been executed.

@@ -97,6 +97,7 @@
     <None Include="TestFiles/Fake.DotNet.Xdt.Files/web.original.config" CopyToOutputDirectory="Always" />
     <None Include="TestFiles/Fake.DotNet.Xdt.Files/web.test.config" CopyToOutputDirectory="Always" />
     <None Include="TestFiles/Fake.DotNet.Xdt.Files/web.transformed.config" CopyToOutputDirectory="Always" />
+    <PackageReference Include="Paket.Core" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>

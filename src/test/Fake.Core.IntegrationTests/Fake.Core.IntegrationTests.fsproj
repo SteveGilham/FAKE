@@ -30,6 +30,7 @@
     <None Include="testdata\testProperty.proj" CopyToOutputDirectory="PreserveNewest" />
     <None Include="testdata\testPath.proj" CopyToOutputDirectory="PreserveNewest" />
     <None Include="Script.fsx" />
+    <PackageReference Include="Paket.Core" />
     <!-- None Include="paket.references" / -->
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->

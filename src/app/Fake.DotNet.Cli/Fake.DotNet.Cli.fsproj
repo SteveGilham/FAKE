@@ -28,6 +28,7 @@
     <ProjectReference Include="..\Fake.DotNet.NuGet\Fake.DotNet.NuGet.fsproj" />
     <ProjectReference Include="..\Fake.IO.FileSystem\Fake.IO.FileSystem.fsproj" />
     <ProjectReference Include="..\Fake.DotNet.MSBuild\Fake.DotNet.MSBuild.fsproj" />
+    <PackageReference Include="Mono.Posix.NETStandard" />
   </ItemGroup>
   <!-- Import Project="..\..\..\.paket\Paket.Restore.targets" / -->
 </Project>
