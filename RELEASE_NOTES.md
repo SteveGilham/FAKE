@@ -1,4 +1,7 @@
 # Release Notes
+## 6.1.4 - 2025-10-22
+* Bridging release.
+
 ## 6.1.3 - 2024-09-26
 * ENHANCEMENT: SdkAssemblyResolver. Support using the latest installed SDK.
 
