@@ -4,6 +4,7 @@
 
 #r "paket:
 source release/dotnetcore
+source bridge
 source https://api.nuget.org/v3/index.json
 nuget FSharp.Core
 nuget Microsoft.Build 17.11.4
