@@ -304,7 +304,7 @@ type SdkAssemblyResolver(logLevel: Trace.VerboseLevel) =
                 | [] ->
                     Trace.traceFAKE
                         $"No product release found for {version.ToString()}. Maybe a pre-release? Returning all the versions."
-
+                    failwithf "No product release found for %A - bang!" version
                     versions
                 | majorMatch ->
                     Trace.traceFAKE $".NET {version.Major} product releases returned."
