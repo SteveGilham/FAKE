@@ -36,7 +36,7 @@ type SdkAssemblyResolver(logLevel: Trace.VerboseLevel) =
     // Defaults still .NET 6.0 but could be overriden with .NET 8.0 or even comma-separated "6.0,8.0"
     let RuntimeAssemblyVersions =
         let versions =
-            Environment.environVarOrDefault "FAKE_SDK_RESOLVER_CUSTOM_DOTNET_VERSION" "6.0,8.0"
+            Environment.environVarOrDefault "FAKE_SDK_RESOLVER_CUSTOM_DOTNET_VERSION" "8.0,6.0"
 
         versions.Split([| ','; ';' |]) |> Array.toList
 
@@ -304,7 +304,7 @@ type SdkAssemblyResolver(logLevel: Trace.VerboseLevel) =
                 | [] ->
                     Trace.traceFAKE
                         $"No product release found for {version.ToString()}. Maybe a pre-release? Returning all the versions."
-                    failwithf "No product release found for %A - bang!" version
+
                     versions
                 | majorMatch ->
                     Trace.traceFAKE $".NET {version.Major} product releases returned."

@@ -1,0 +1,16 @@
+StackTrace:
+        at Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThenFail@1448.Invoke(String message)
+        at Fake.Runtime.FakeRuntime.retrieveInfosUncached@147(String cacheDir, Lazy`1 paketDependenciesFile, VerboseLevel logLevel, GroupName groupName, SdkAssemblyResolver sdkAssemblyResolver, FrameworkIdentifier framework, Rid rid, Rid ridNotVersionSpecific, Lazy`1 lockFile, Lazy`1 cache, Unit unitVar0) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\FakeRuntime.fs:line 259
+        at Fake.Runtime.FakeRuntime.getKnownDependencies@424-1.Invoke(Unit unitVar0) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\FakeRuntime.fs:line 425
+        at Fake.Runtime.CoreCache.getCached[a](FSharpFunc`2 getUncached, FSharpFunc`2 readFromCache, FSharpFunc`2 writeToCache, FSharpFunc`2 checkCacheUpToDate) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\CoreCache.fs:line 43
+        at Fake.Runtime.FakeRuntime.getKnownDependencies@422(String cacheDir, Lazy`1 paketDependenciesFile, VerboseLevel logLevel, GroupName groupName, FileInfo lockFilePath, String dependencyCacheHashFile, String dependencyCacheFile, SdkAssemblyResolver sdkAssemblyResolver, FrameworkIdentifier framework, Rid rid, Rid ridNotVersionSpecific, Lazy`1 lockFile, Lazy`1 cache, Lazy`1 writeIntellisenseTask, FSharpFunc`2 readFromCache, FSharpFunc`2 writeToCache, Unit unitVar0) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\FakeRuntime.fs:line 423
+        at Fake.Runtime.FakeRuntime.knownDependencies@438.Invoke(Unit unitVar) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\FakeRuntime.fs:line 438
+        at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+        at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+        at System.Lazy`1.CreateValue()
+        at Fake.Runtime.FakeRuntime.paketCachingProvider@456-5.Fake.Runtime.CoreCache.ICachingProvider.TryLoadCache(FakeContext context) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\FakeRuntime.fs:line 472
+        at Fake.Runtime.CoreCache.prepareContext(FakeConfig config, ICachingProvider cache) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\CoreCache.fs:line 624
+        at Fake.Runtime.CoreCache.runScriptWithCacheProviderExt(FakeConfig config, ICachingProvider cache) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\CoreCache.fs:line 662
+        at Fake.Runtime.FakeRuntime.runScript(PrepareInfo preparedScript) in D:\a\FAKE\FAKE\src\app\Fake.Runtime\FakeRuntime.fs:line 809
+        at Program.runOrBuild(RunArguments args) in D:\a\FAKE\FAKE\src\app\Fake.netcore\Program.fs:line 196
+   
