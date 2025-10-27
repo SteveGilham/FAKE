@@ -213,21 +213,21 @@ let paketCachingProvider
                             Paket.Requirements.getExplicitRestriction p.Settings.FrameworkRestrictions
                         )
 
-                    let targetProfile = Paket.TargetProfile.SinglePlatform framework
+                    let targetProfiles = List.map Paket.TargetProfile.SinglePlatform framework
 
                     let refAssemblies =
-                        installModel.GetCompileReferences targetProfile
+                        Seq.collect installModel.GetCompileReferences targetProfiles
                         |> Seq.map (fun fi -> true, FileInfo fi.Path)
 
                     let! graph = graph |> Async.AwaitTask
 
                     let runtimeAssemblies =
-                        installModel.GetRuntimeAssemblies graph rid targetProfile
+                        Seq.collect (installModel.GetRuntimeAssemblies graph rid) targetProfiles
                         |> Seq.map (fun fi -> false, FileInfo fi.Library.Path)
                         |> Seq.toList
 
                     let runtimeLibraries =
-                        installModel.GetRuntimeLibraries graph rid targetProfile
+                        Seq.collect (installModel.GetRuntimeLibraries graph rid) targetProfiles
                         |> Seq.map (fun fi -> DependencyFile.Library { File = fi.Library.Path })
                         |> Seq.toList
                     // please see: https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
@@ -235,7 +235,7 @@ let paketCachingProvider
                     // THe runtime identifier on windows 10 machine will be win10-x64 however, Sqlite.Interop
                     // will have an RID of win-x64
                     let runtimeLibrariesNotVersionSpecific =
-                        installModel.GetRuntimeLibraries graph ridNotVersionSpecific targetProfile
+                        Seq.collect (installModel.GetRuntimeLibraries graph ridNotVersionSpecific) targetProfiles
                         |> Seq.map (fun fi -> DependencyFile.Library { File = fi.Library.Path })
                         |> Seq.toList
 
@@ -356,7 +356,7 @@ let paketCachingProvider
                 { Cache = cache.Value
                   ScriptType = Paket.LoadingScripts.ScriptGeneration.ScriptType.FSharp
                   Groups = [ groupName ]
-                  DefaultFramework = false, framework }
+                  DefaultFramework = false, framework |> Seq.head } //TODO: multiple frameworks?
             |> Async.StartAsTask
 
     let readFromCache () =
