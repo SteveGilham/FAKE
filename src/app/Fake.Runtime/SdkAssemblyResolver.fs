@@ -61,10 +61,9 @@ type SdkAssemblyResolver(logLevel: Trace.VerboseLevel) =
             | Some v -> FrameworkIdentifier.DotNetFramework v
             | None -> failwithf $"Paket: .NET not found: {thisSdk.Major.ToString()}")
 
-
-    member this.SdkVersionRaw = RuntimeAssemblyVersions |> Seq.head
-    member this.SdkVersion = this.SdkVersions |> Seq.head
-    member this.PaketFrameworkIdentifier = this.PaketFrameworkIdentifiers |> Seq.head
+    member this.SdkVersionRaw = RuntimeAssemblyVersions
+    member this.SdkVersion = this.SdkVersions
+    member this.PaketFrameworkIdentifier = this.PaketFrameworkIdentifiers
 
     member this.SdkVersionFromGlobalJson = DotNet.tryGetSDKVersionFromGlobalJson ()
 
