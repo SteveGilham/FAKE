@@ -305,7 +305,7 @@ type SdkAssemblyResolver(logLevel: Trace.VerboseLevel) =
                 match versions |> List.filter (fun release -> release.Version.Major = version.Major) with
                 | [] ->
                     Trace.traceFAKE
-                        $"No product release found for {version.ToString()}. Maybe a pre-release? Returning all the versions."
+                        $"No product release found for {version.ToString()}. Maybe a pre-release? Expected one from {RuntimeAssemblyVersions}. Returning all the versions."
 
                     versions
                 | majorMatch ->
