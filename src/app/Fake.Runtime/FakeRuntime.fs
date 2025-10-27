@@ -235,7 +235,7 @@ let paketCachingProvider
                     // THe runtime identifier on windows 10 machine will be win10-x64 however, Sqlite.Interop
                     // will have an RID of win-x64
                     let runtimeLibrariesNotVersionSpecific =
-                        Seq.collect(installModel.GetRuntimeLibraries graph ridNotVersionSpecific) targetProfiles
+                        Seq.collect (installModel.GetRuntimeLibraries graph ridNotVersionSpecific) targetProfiles
                         |> Seq.map (fun fi -> DependencyFile.Library { File = fi.Library.Path })
                         |> Seq.toList
 
