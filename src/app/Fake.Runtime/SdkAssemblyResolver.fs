@@ -22,6 +22,9 @@ open Microsoft.Deployment.DotNet.Releases
 /// the resolution of runtime version for the selected SDK is as follows; we will use the dotnet official release
 /// package to get the releases for pinned framework version, and get the runtime. If the accessing the network
 /// is not possible, then we will use a cached releases file.
+///
+/// perhaps in future System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription might help
+/// Yields results like ".NET 6.0.36" or ".NET 10.0.0-rc.2.25502.107" w/versions matching the file paths
 
 type SdkAssemblyResolver(logLevel: Trace.VerboseLevel) =
 
